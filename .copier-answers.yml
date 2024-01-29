@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: rino@emotiongraphics.jp
+author_name: Rino
+data_format: string
+file_extension: ''
+has_binder: false
+has_settings: false
+kind: theme
+labextension_name: jupyterlab-mtype-theme
+mimetype: ''
+mimetype_name: ''
+project_short_description: Modern Type Theme for Jupyter Lab
+python_name: jupyterlab_mtype_theme
+repository: https://github.com/rinodrops/jupyterlab-mtype-theme
+test: false
+viewer_name: ''
+
