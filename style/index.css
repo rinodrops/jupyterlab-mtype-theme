@@ -1,5 +1,46 @@
+@import url('./custom.css');
 @import url('./variables.css');
 
+/* -----------------------------------------------------------------------------
+   Tab bar (The most left panel)
+----------------------------------------------------------------------------- */
+.jp-SideBar.lm-TabBar, .lm-TabBar {
+  background-color: var(--jp-layout-color3) !important;
+}
+
+.lm-TabBar-tab.lm-mod-current {
+  background-color:  var(--jp-layout-color2) !important;
+}
+
+.jp-mod-left .lm-TabBar-tab.lm-mod-current {
+  background-color:  var(--jp-layout-color2) !important;
+  border-left: var(--jp-private-horizontal-tab-active-top-border) solid var(--jp-brand-color1);
+}
+
+.jp-mod-left .lm-TabBar-tab {
+  background-color:  #d3d2cf !important;
+}
+
+.jp-SideBar.lm-TabBar .lm-TabBar-tab + .lm-TabBar-tab {
+  border-top: var(--jp-border-width) solid var(--jp-layout-color3);
+}
+
+/* -----------------------------------------------------------------------------
+   Basic
+----------------------------------------------------------------------------- */
+h1+h1, h2+h1, h3+h1, h4+h1, h5+h1, h6+h1,
+h1+h2, h2+h2, h3+h2, h4+h2, h5+h2, h6+h2,
+h1+h3, h2+h3, h3+h3, h4+h3, h5+h3, h6+h3,
+h1+h4, h2+h4, h3+h4, h4+h4, h5+h4, h6+h4,
+h1+h5, h2+h5, h3+h5, h4+h5, h5+h5, h6+h5,
+h1+h6, h2+h6, h3+h6, h4+h6, h5+h6, h6+h6 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Formatting
+----------------------------------------------------------------------------- */
 /* Set the default typography for monospace elements */
 tt,
 code,
@@ -9,4 +50,165 @@ pre {
   font-family: var(--jp-code-font-family);
   font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
+}
+
+/* Inline code segment */
+.jp-RenderedHTMLCommon p code {
+  background: rgba(60, 45, 0, 0.05);
+  color: #e00917;
+  border: 1px solid rgba(60, 45, 0, 0.05);
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+/* Code block */
+.jp-RenderedHTMLCommon pre {
+  background: rgba(60, 45, 0, 0.05);
+  border-radius: 6px;
+  padding: 1rem;
+}
+.jp-RenderedHTMLCommon pre code {
+  background: transparent;
+}
+
+/* -----------------------------------------------------------------------------
+   Forms and Input
+----------------------------------------------------------------------------- */
+.cm-content {
+  padding: 8px !important;
+}
+
+.jp-Editor,
+.jp-MarkdownOutput,
+.jp-Placeholder-content,
+.jp-OutputArea-output {
+  border-radius: 6px;
+  border-color: transparent;
+  padding: 8px;
+}
+
+.jp-OutputArea-output {
+  border: 1px solid #bcbbb8;
+}
+
+.jp-OutputArea-output pre {
+  padding: 8px;
+}
+
+.cm-gutters, .cm-gutter {
+  background-color: transparent !important;
+  margin-right: 8px;
+  color: #757573;
+}
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea {
+  resize: none;
+}
+
+.jp-mod-selected .jp-MarkdownOutput {
+  border-color: #ffffff;
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser {
+  background-color: #bcbbb8 !important;
+}
+
+.jp-Notebook .jp-Cell.jp-mod-dirty .jp-InputPrompt::before,
+.jp-Notebook .jp-Cell.jp-mod-dirty .jp-InputPrompt {
+  color: #bcbbb8;
+}
+
+.jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor {
+  background-color: rgba(60, 45, 0, 0.05);
+  border-color: #bcbbb8;
+}
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea::after,
+.jp-OutputArea-promptOverlay:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Lists
+----------------------------------------------------------------------------- */
+.jp-RenderedHTMLCommon ul,
+.jp-RenderedHTMLCommon ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jp-RenderedHTMLCommon ol ol,
+.jp-RenderedHTMLCommon ul ol {
+  list-style-type: lower-roman;
+}
+
+.jp-RenderedHTMLCommon ul ul,
+.jp-RenderedHTMLCommon ul ol,
+.jp-RenderedHTMLCommon ol ol,
+.jp-RenderedHTMLCommon ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jp-RenderedHTMLCommon ul ul ol,
+.jp-RenderedHTMLCommon ul ol ol,
+.jp-RenderedHTMLCommon ol ul ol,
+.jp-RenderedHTMLCommon ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.jp-RenderedHTMLCommon li>p {
+  margin: 0;
+}
+
+
+
+.jp-RenderedHTMLCommon table {
+  /* display: block; */
+  /* width: 100%; */
+  overflow: auto;
+  word-break: keep-all;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jp-RenderedHTMLCommon table th {
+  font-weight: 600;
+  color: #a4a4a1;
+  text-transform: uppercase;
+  padding: 4px 13px 2px 13px;
+}
+
+.jp-RenderedHTMLCommon table td {
+  font-weight: normal;
+  padding: 6px 13px 4px 13px;
+}
+
+.jp-RenderedHTMLCommon table th,
+.jp-RenderedHTMLCommon table td {
+  border-top: 1px solid #d3d2cf;
+  border-right: 0;
+  border-bottom: 1px solid #d3d2cf;
+  border-left: 0;
+}
+
+.jp-RenderedHTMLCommon table tr {
+  background-color: #ffffff;
+  border: 0;
+  border-top: 1px solid #bcbbb8;
+}
+
+.jp-RenderedHTMLCommon table tr:nth-child(2n) {
+  background-color: fade(#ebeae6, 25%);
+}
+
+button.jp-collapseHeadingButton {
+  display: none !important;
 }
