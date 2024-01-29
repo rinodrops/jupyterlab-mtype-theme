@@ -3,7 +3,7 @@ requires = ["hatchling>=1.5.0", "jupyterlab>=4.0.0,<5", "hatch-nodejs-version>=0
 build-backend = "hatchling.build"
 
 [project]
-name = "jupyterlab_mtype_theme"
+name = "jupyterlab-mtype-theme"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.8"
@@ -33,23 +33,23 @@ source = "nodejs"
 fields = ["description", "authors", "urls"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["jupyterlab_mtype_theme/labextension"]
+artifacts = ["jupyterlab-mtype-theme/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"jupyterlab_mtype_theme/labextension" = "share/jupyter/labextensions/jupyterlab-mtype-theme"
+"jupyterlab-mtype-theme/labextension" = "share/jupyter/labextensions/jupyterlab-mtype-theme"
 "install.json" = "share/jupyter/labextensions/jupyterlab-mtype-theme/install.json"
 
 [tool.hatch.build.hooks.version]
-path = "jupyterlab_mtype_theme/_version.py"
+path = "jupyterlab-mtype-theme/_version.py"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.5"]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
-    "jupyterlab_mtype_theme/labextension/package.json",
+    "jupyterlab-mtype-theme/labextension/package.json",
 ]
-skip-if-exists = ["jupyterlab_mtype_theme/labextension/static/style.js"]
+skip-if-exists = ["jupyterlab-mtype-theme/labextension/static/style.js"]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
 build_cmd = "build:prod"
@@ -59,7 +59,7 @@ npm = ["jlpm"]
 build_cmd = "install:extension"
 npm = ["jlpm"]
 source_dir = "src"
-build_dir = "jupyterlab_mtype_theme/labextension"
+build_dir = "jupyterlab-mtype-theme/labextension"
 
 [tool.jupyter-releaser.options]
 version_cmd = "hatch version"

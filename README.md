@@ -20,7 +20,7 @@ The Modern Type Theme prioritizes clarity and ease of reading, making it perfect
 To install the extension, execute:
 
 ```bash
-pip install jupyterlab_mtype_theme
+pip install jupyterlab-mtype-theme
 ```
 
 ## Uninstall
@@ -28,7 +28,7 @@ pip install jupyterlab_mtype_theme
 To remove the extension, execute:
 
 ```bash
-pip uninstall jupyterlab_mtype_theme
+pip uninstall jupyterlab-mtype-theme
 ```
 
 ## Contributing
@@ -43,7 +43,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the jupyterlab_mtype_theme directory
+# Change directory to the jupyterlab-mtype-theme directory
 # Install package in development mode
 pip install -e "."
 # Link your development version of the extension with JupyterLab
@@ -72,7 +72,7 @@ jupyter lab build --minimize=False
 ### Development uninstall
 
 ```bash
-pip uninstall jupyterlab_mtype_theme
+pip uninstall jupyterlab-mtype-theme
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`

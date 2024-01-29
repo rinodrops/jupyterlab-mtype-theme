@@ -26,5 +26,5 @@ jobs:
       - name: Upload Distributions
         uses: actions/upload-artifact@v3
         with:
-          name: jupyterlab_mtype_theme-releaser-dist-${{ github.run_number }}
+          name: jupyterlab-mtype-theme-releaser-dist-${{ github.run_number }}
           path: .jupyter_releaser_checkout/dist

@@ -12,7 +12,7 @@ labextension_name: jupyterlab-mtype-theme
 mimetype: ''
 mimetype_name: ''
 project_short_description: Modern Type Theme for Jupyter Lab
-python_name: jupyterlab_mtype_theme
+python_name: jupyterlab-mtype-theme
 repository: https://github.com/rinodrops/jupyterlab-mtype-theme
 test: false
 viewer_name: ''
