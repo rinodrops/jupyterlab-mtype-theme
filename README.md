@@ -1,7 +1,15 @@
-# jupyterlab_mtype_theme
-
 [![Github Actions Status](https://github.com/rinodrops/jupyterlab-mtype-theme/workflows/Build/badge.svg)](https://github.com/rinodrops/jupyterlab-mtype-theme/actions/workflows/build.yml)
-Modern Type Theme for Jupyter Lab
+
+# Modern Type Theme for Jupyter Lab
+
+Where Clarity Meets Elegance in Markdown Editing
+
+## Introduction
+
+The Modern Type Theme prioritizes clarity and ease of reading, making it perfect for both long hours of writing and quick note-taking.
+
+## Screenshot
+![Screenshot](screenshots/jupyterlab.png)
 
 ## Requirements
 
