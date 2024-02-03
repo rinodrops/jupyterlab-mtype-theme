@@ -95,6 +95,10 @@ pre {
   padding: 8px;
 }
 
+.jp-OutputArea-child {
+    padding-top: 6px;
+}
+
 .cm-gutters, .cm-gutter {
   background-color: transparent !important;
   margin-right: 8px;
